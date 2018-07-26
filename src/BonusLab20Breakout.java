@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class BonusLab20Breakout {
 	
-	String universalVariable = "Hello World!";
+	
 
 	public static void main(String[] args) {
 		
@@ -35,7 +35,7 @@ public class BonusLab20Breakout {
 			shoppingCart.add(newItem);
 			
 			//"Add another item? (y/n)"
-			System.out.println("Add another item? (y/n) ");
+			System.out.println("Add more? (y/n) ");
 			cont = scan.nextLine();
 			cont = cont.toLowerCase();
 			
@@ -44,7 +44,7 @@ public class BonusLab20Breakout {
 		
 			//if no, display:
 		
-		System.out.println("This is your cart");
+		System.out.println("Here's what you have");
 		System.out.println(shoppingCart);
 		
 			
@@ -93,7 +93,7 @@ public class BonusLab20Breakout {
 			
 		}
 		
-		System.out.println("Average price: " + sum/count);
+		System.out.println("Average price: $ " + sum/count);
 	}
 
 
@@ -128,6 +128,8 @@ public class BonusLab20Breakout {
 		tempinventory.put("cauliflower", 1.59);
 		tempinventory.put("dragonfruit", 2.19);
 		tempinventory.put("figs", 2.09);
+		tempinventory.put("grapefruit", 1.99);
+		tempinventory.put("honeydew", 3.49);
 		
 		return tempinventory;		
 	}
